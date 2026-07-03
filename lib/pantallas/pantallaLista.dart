@@ -37,8 +37,7 @@ class _PantallalistaState extends State<Pantallalista> {
       body: Container(
         // <- 1. El Container rojo va por fuera
         width: double.infinity,
-        height: double
-            .infinity, // (Opcional) Para asegurar que cubra toda la pantalla hacia abajo
+        height: double.infinity, // (Opcional) Para asegurar
         decoration: BoxDecoration(color: Colors.white),
         child: SafeArea(
           // <- 2. El SafeArea va por dentro
@@ -74,11 +73,12 @@ class _PantallalistaState extends State<Pantallalista> {
                         },
                       ),
               ),
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(10),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 18.0),
+                child: Center(
                   child: ElevatedButton(
                     onPressed: () {
+                      // Aquí puedes agregar la lógica para añadir una nueva tarea
                     },
                     child: Text("Agregar tarea"),
                   ),
